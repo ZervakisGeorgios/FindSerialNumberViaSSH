@@ -1,1 +1,4 @@
 # FindSerialNumberViaSSH
+When you run the script, it asks you to provide username, password and the string you'd like it to search. Searching for serial numbers you search for the string "Processor board ID". The serial number is displayed just after this string. Afterwards, the script creates an SSH session with the device and searches the string you provided under the #show version command. When the script hits the line having the string "Processor board ID", it will display the whole line. The script can be improved to display only the SN, probably storing it into an excel file with the IP address as well.
+
+The script creates and SSH session with every IP address that you have stored into a separate .txt file stored under the same folder. The script will run every single IP address in that .txt file and display the SN of them.
